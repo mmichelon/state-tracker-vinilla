@@ -3,17 +3,19 @@
     <div>
       <b-navbar type="dark" variant="dark">
         <b-navbar-nav>
-          <b-nav-item router-link to="/">Home</b-nav-item>
+          <b-nav-item router-link to="/">State Tracker</b-nav-item>
           <b-nav-item router-link to="/state" v-show="user">States</b-nav-item>
 
-          <b-nav-item-dropdown text="User" right>
+          <b-nav-item-dropdown text="User" v-show="user" right>
             <b-dropdown-item router-link to="/account">Account</b-dropdown-item>
+            <b-dropdown-item class = "ml-auto" router-link to="/" @click="signoutButtonPressed" v-show="user">Log Out</b-dropdown-item>
+
           </b-nav-item-dropdown>
 
           <b-nav-item class = "ml-auto" router-link to="/signup" v-show="!user">Log In</b-nav-item>
-          <b-nav-item class = "ml-auto" router-link to="/" @click="signoutButtonPressed" v-show="user">Log Out</b-nav-item>
         </b-navbar-nav>
       </b-navbar>
+
     </div>
     <router-view/>
   </div>
@@ -39,7 +41,7 @@ export default {
         signoutButtonPressed(e) {
             e.stopPropagation();
             firebase.auth().signOut();
-            this.$router.push({ name: "Login" });
+            this.$router.push('/');
         }
     }
 };

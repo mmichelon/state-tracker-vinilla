@@ -99,7 +99,6 @@ export default {
           if(this.selected == "Found States"){
             this.getStatesFound();
           }
-
       },
 
         async getStates() {
@@ -522,6 +521,18 @@ export default {
                 .update({
                     isFound: isChecked
                 });
+                // this.handleChange();
+                if(this.selected == "All States"){
+                  this.getStates();
+                }
+
+                if(this.selected == "Not Found States"){
+                  this.getStatesNotFound();
+                }
+                if(this.selected == "Found States"){
+                  this.getStatesFound();
+                }
+
         },
     }
 };
