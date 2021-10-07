@@ -14,7 +14,7 @@
               button-variant="outline-primary"
               size="lg"
               name="radio-btn-outline"
-              buttons @change="handleChange($event)"
+              buttons @change="handleChange()"
             ></b-form-radio-group>
           </b-form-group>
         </div>
@@ -88,8 +88,7 @@ export default {
 
     methods: {
 
-      handleChange: function(e) {
-          const name = e;
+      handleChange: function() {
           if(this.selected == "All States"){
             this.getStates();
           }
