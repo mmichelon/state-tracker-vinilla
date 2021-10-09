@@ -2,7 +2,7 @@
     <section>
         <h3 class="center-align"><span>{{ selected }}</span></h3>
 
-        <div>
+        <div class="space">
           <b-form-group
             v-slot="{ ariaDescribedby }"
           >
@@ -18,6 +18,18 @@
             ></b-form-radio-group>
           </b-form-group>
         </div>
+
+        <div>
+          <h1 v-if="selected === 'All States'"></h1>
+          <h3 v-else class="space">
+            You have found
+             <strong>{{this.size}}</strong>
+              <strong>/</strong>
+            <strong>50</strong>
+            states
+          </h3>
+        </div>
+
 
         <ul class="collection with-header">
             <li
@@ -66,7 +78,8 @@ export default {
               { text: 'All States', value: 'All States'},
               { text: 'Not Found States', value: 'Not Found States' },
               { text: 'Found States', value: 'Found States' }
-            ]
+            ],
+            size: 0
           };
     },
     created() {
@@ -108,6 +121,7 @@ export default {
                 .doc(firebase.auth().currentUser.uid)
                 .collection("states").orderBy("title")
             statesRef.onSnapshot(snap => {
+                this.size = snap.size // will return the collection size
                 this.states = [];
                 snap.forEach(doc => {
                     var state = doc.data();
@@ -123,6 +137,7 @@ export default {
                 .doc(firebase.auth().currentUser.uid)
                 .collection("states").orderBy("title").where("isFound", "==", false)
             statesRef.onSnapshot(snap => {
+              this.size = snap.size // will return the collection size
                 this.states = [];
                 snap.forEach(doc => {
                     var state = doc.data();
@@ -139,6 +154,7 @@ export default {
                 .doc(firebase.auth().currentUser.uid)
                 .collection("states").orderBy("title").where("isFound", "==", true)
             statesRef.onSnapshot(snap => {
+              this.size = snap.size // will return the collection size
                 this.states = [];
                 snap.forEach(doc => {
                     var state = doc.data();
@@ -610,6 +626,13 @@ li {
 }
 .deleteIcon:hover {
     opacity: 0.5;
+}
+
+.space {
+  padding-top: 20px;
+  /* padding-right: 30px; */
+  padding-bottom: 20px;
+  /* padding-left: 80px; */
 }
 
 </style>
