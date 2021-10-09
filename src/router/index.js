@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import SignUp from '../views/SignUp.vue'
 import Account from '../views/Account.vue'
 import States from '../views/States.vue'
+import Visual from '../views/Visual.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/state',
     name: 'States',
     component: States
+  },
+  {
+    path: '/visual',
+    name: 'Visua.',
+    component: Visual
   },
   {
     path: '/about',

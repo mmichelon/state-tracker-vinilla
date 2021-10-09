@@ -59,7 +59,7 @@ export default {
             state: {
                 title: ""
             },
-            // picked: 'All States',
+
             search: '',
             selected: 'All States',
             options: [
@@ -198,301 +198,351 @@ export default {
                 {
                   title: "Alabama",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "al"
                   // id: doc.id
                 }
                 ,{
                   title: "Alaska",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ak"
                   // id: doc.id
                 }
                 ,{
                   title: "Arizona",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "az"
                   // id: doc.id
                 }
                 ,{
                   title: "Arkansas",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ar"
                   // id: doc.id
                 }
                 ,{
                   title: "California",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ca"
                   // id: doc.id
                 }
                 ,{
                   title: "Colorado",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "co"
                   // id: doc.id
                 }
                 ,{
                   title: "Connecticut",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ct"
                   // id: doc.id
                 }
                 ,{
                   title: "Delaware",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "de"
                   // id: doc.id
                 }
                 ,{
                   title: "Florida",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "fl"
                   // id: doc.id
                 }
                 ,{
                   title: "Georgia",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ga"
                   // id: doc.id
                 }
                 ,{
                   title: "Hawaii",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "hi"
                   // id: doc.id
                 }
                 ,{
                   title: "Idaho",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "id"
                   // id: doc.id
                 }
                 ,{
                   title: "Illinois",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "il"
                   // id: doc.id
                 }
                 ,{
                   title: "Indiana",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "in"
                   // id: doc.id
                 }
                 ,{
                   title: "Iowa",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ia"
                   // id: doc.id
                 }
                 ,{
                   title: "Kansas",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ks"
                   // id: doc.id
                 }
                 ,{
                   title: "Kentucky",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ky"
                   // id: doc.id
                 }
                 ,{
                   title: "Louisiana",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "la"
                   // id: doc.id
                 }
                 ,{
                   title: "Maine",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "me"
                   // id: doc.id
                 }
                 ,{
                   title: "Maryland",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "md"
                   // id: doc.id
                 }
                 ,{
                   title: "Massachusetts",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ma"
                   // id: doc.id
                 }
                 ,{
                   title: "Michigan",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "mi"
                   // id: doc.id
                 }
                 ,{
                   title: "Minnesota",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "mn"
                   // id: doc.id
                 }
                 ,{
                   title: "Mississippi",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ms"
                   // id: doc.id
                 }
                 ,{
                   title: "Missouri",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "mo"
                   // id: doc.id
                 }
                 ,{
                   title: "Montana",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "mt"
                   // id: doc.id
                 }
                 ,{
                   title: "Nebraska",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ne"
                   // id: doc.id
                 }
                 ,{
                   title: "Nevada",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "nv"
                   // id: doc.id
                 }
                 ,{
                   title: "New Hampshire",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "nh"
                   // id: doc.id
                 }
                 ,{
                   title: "New Jersey",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "nj"
                   // id: doc.id
                 }
                 ,{
                   title: "New Mexico",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "nm"
                   // id: doc.id
                 }
                 ,{
                   title: "New York",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ny"
                   // id: doc.id
                 }
                 ,{
                   title: "North Carolina",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "nc"
                   // id: doc.id
                 }
                 ,{
                   title: "North Dakota",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "nd"
                   // id: doc.id
                 }
                 ,{
                   title: "Ohio",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "oh"
                   // id: doc.id
                 }
                 ,{
                   title: "Oklahoma",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ok"
                   // id: doc.id
                 }
                 ,{
                   title: "Oregon",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "or"
                   // id: doc.id
                 }
                 ,{
                   title: "Pennsylvania",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "pa"
                   // id: doc.id
                 }
                 ,{
                   title: "Rhode Island",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ri"
                   // id: doc.id
                 }
                 ,{
                   title: "South Carolina",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "sc"
                   // id: doc.id
                 }
                 ,{
                   title: "South Dakota",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "sd"
                   // id: doc.id
                 }
                 ,{
                   title: "Tennessee",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "tn"
                   // id: doc.id
                 }
                 ,{
                   title: "Texas",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "tx"
                   // id: doc.id
                 }
                 ,{
                   title: "Utah",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "ut"
                   // id: doc.id
                 }
                 ,{
                   title: "Vermont",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "vt"
                   // id: doc.id
                 }
                 ,{
                   title: "Virginia",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "va"
                   // id: doc.id
                 }
                 ,{
                   title: "Washington",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "wa"
                   // id: doc.id
                 }
                 ,{
                   title: "West Virginia",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "wv"
                   // id: doc.id
                 }
                 ,{
                   title: "Wisconsin",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "wi"
                   // id: doc.id
                 }
                 ,{
                   title: "Wyoming",
                   isFound: false,
-                  createdAt: new Date()
+                  createdAt: new Date(),
+                  shortTitle: "wy"
                   // id: doc.id
                 }
               ]
