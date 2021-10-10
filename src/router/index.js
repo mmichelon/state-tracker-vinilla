@@ -5,6 +5,7 @@ import SignUp from '../views/SignUp.vue'
 import Account from '../views/Account.vue'
 import States from '../views/States.vue'
 import Visual from '../views/Visual.vue'
+import StateData from '../views/statedata.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/visual',
     name: 'Visua.',
     component: Visual
+  },
+  {
+    path: '/statedata',
+    name: 'statedata.',
+    component: StateData
   },
   {
     path: '/about',

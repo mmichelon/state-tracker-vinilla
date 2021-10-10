@@ -8,7 +8,8 @@
     <h1>
       Selected States
     </h1>
-    <ul class="collection with-header">
+
+    <!-- <ul class="collection with-header">
         <li
             class="collection-item"
             v-for="state in states"
@@ -28,14 +29,19 @@
                 </label>
             </span>
         </li>
+    </ul> -->
 
-    </ul>
   </div>
 </template>
 
 <script>
 import { CheckboxSvgMap } from "vue-svg-map";
 import USA from "@svg-maps/usa";
+
+//For Google chart graphic display
+// import { GChart } from "vue-google-charts";
+
+// import GoogleChart from '../components/GoogleChart.vue'
 
 //Get firebase data this will allow information from firebase to visualize
 import firebase from 'firebase/compat/app';
@@ -53,7 +59,6 @@ export default {
 
       states: [],
       state: {
-          // title: ""
           shortTitle: ""
       },
 		};

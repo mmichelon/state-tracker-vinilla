@@ -9,6 +9,8 @@
           <b-nav-item-dropdown text="States" v-show="user" right>
             <b-dropdown-item router-link to="/state" v-show="user">States Selection</b-dropdown-item>
             <b-dropdown-item class = "ml-auto" router-link to="/visual" v-show="user">Visualize States</b-dropdown-item>
+            <b-dropdown-item router-link to="/statedata" v-show="user">States Data</b-dropdown-item>
+
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="User" v-show="user" right>
