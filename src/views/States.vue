@@ -21,7 +21,14 @@
 
         <div>
           <h1 v-if="selected === 'All States'"></h1>
-          <h3 v-else class="space">
+          <h3 v-if="selected === 'Not Found States'" class="space">
+            You have not found
+             <strong>{{this.size}}</strong>
+              <strong>/</strong>
+            <strong>50</strong>
+            states
+          </h3>
+          <h3 v-if="selected === 'Found States'" class="space">
             You have found
              <strong>{{this.size}}</strong>
               <strong>/</strong>
